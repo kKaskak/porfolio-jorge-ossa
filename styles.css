@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --svg-height: 16px;
+    --svg-width: 16px;
+    --font-family: 'IBM Plex Sans', sans-serif;
+    --text-align: left;
+    --weight-bold: 700;
+    --weight-normal: 400;
+    --weight-thin: 300;
+    --black-222: #222;
+    --gradient-text: linear-gradient(135deg, #FF26B2 0%, #851BD9 64.06%, #3F0FFF 100%);
+    --section-title-color: #000000;
+    --section-job-title-color: #999999;
+    --font-size-large: 19px;
+    --font-size-big: 16px;
+    --font-size-medium: 13px;
+    --font-size-small: 10px;
+}
+/*------------- GLOBALS -----------------*/
+.section__padding {
+    padding: 1rem 4rem;
+}
+.cv__object {
+    width: var(--svg-width);
+    height: var(--svg-height);
+}
+hr {
+    color: #999999;
+    width: 100%;
+    margin: 0 0 1rem 0;
+}
+
+/*------------- CV__INTRO  -----------------*/
+.cv__intro {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cv__intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.cv__intro__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cv__intro-container-heading {
+    font-family: var(--font-family);
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--letter-spacing);
+    font-size: 44px;
+    font-style: normal;
+    line-height: normal;
+}
+.cv__intro-container-subheading {
+    font-family: var(--font-family);
+    font-weight: var(--weight-bold);
+    background: var(--gradient-text);
+    font-size: calc(var(--section-job-title-font-size) + 5px);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0.5rem;
+}
+.cv__intro-container-p {
+    color: var(--black-222);
+    font-family: var(--font-family);
+    font-weight: var(--weight-normal);
+    font-size: var(--font-size-big);
+    font-style: normal;
+    line-height: normal;
+    padding: 0.5rem;
+}
+.cv__intro-container__links {
+    display: flex;
+}
+.cv__intro-container__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    line-height: 12px;
+}
+.cv__intro-container__link-p {
+    color: var(--black-222);
+    font-weight: var(--weight-normal);
+    text-align: right;
+    font-family: IBM Plex Sans;
+    font-size: var(--font-size-big);
+    font-style: normal;
+    line-height: normal;
+    padding-left: 0.2rem;
+}
+.cv__intro-container__link-a {
+    color: var(--black, #222);
+    font-size: var(--font-size-big);
+    text-align: right;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    padding-left: 0.2rem;
+}
+.cv__intro-image {
+    width: 125px;
+    height: 125px;
+}
+/*------------- CV__MAIN  -----------------*/
+.cv__main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid: 1rem;
+    flex-direction: row;
+}
+
+.cv__main-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0.2rem;
+    flex-direction: column;
+}
+.cv__main-container__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+.cv__main-container__item-heading {
+    font-family: var(--font-family);
+    font-weight: var(--weight-bold);
+    font-size: var(--font-size-large);
+}
+.cv__main-container__item__date-subheading {
+    font-size: var(--font-size-big);
+    font-family: var(--font-family);
+    font-weight: var(--weight-normal);
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.cv__main-container__item__job-title {
+    color: var(--section-job-title-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size-big);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 0.5rem;
+}
+.cv__main-container__item__job-desc {
+    font-family: var(--font-family);
+    font-size: var(--font-size-medium);
+    font-weight: var(--weight-normal);
+    padding-bottom: 0.3rem;
+}
+.cv__main-container__item__p {
+    font-family: var(--font-family);
+    font-size: var(--font-size-medium);
+    font-weight: var(--weight-normal);
+    padding-bottom: 0.3rem;
+}
+.cv__main-container__item-projects-div__title {
+    color: var(--black, #222);
+    font-family: var(--font-family);
+    font-size: var(--font-size-big);
+    font-style: normal;
+    font-weight: var(--weight-bold);
+    text-decoration-line: underline;
+}
