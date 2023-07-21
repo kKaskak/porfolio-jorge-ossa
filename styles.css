@@ -144,6 +144,7 @@ hr {
     font-family: var(--font-family);
     font-weight: var(--weight-bold);
     font-size: var(--font-size-large);
+    padding-bottom: 0.3rem;
 }
 .cv__main-container__item__date-subheading {
     font-size: var(--font-size-big);
