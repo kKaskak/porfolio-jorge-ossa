@@ -37,6 +37,8 @@ li {
 }
 section {
     font-family: var(--font-family);
+    font-style: normal;
+    line-height: normal;
 }
 
 /*------------- CV__INTRO  -----------------*/
@@ -53,13 +55,11 @@ section {
     align-items: flex-start;
 }
 
-.cv__intro-container-heading {
+.cv__intro-container__heading {
     font-weight: var(--weight-bold);
     font-size: 44px;
-    font-style: normal;
-    line-height: normal;
 }
-.cv__intro-container-subheading {
+.cv__intro-container__subheading {
     font-weight: var(--weight-bold);
     background: var(--gradient-text);
     font-size: var(--font-size-large);
@@ -68,12 +68,10 @@ section {
     -webkit-text-fill-color: transparent;
     padding: 0.5rem 0;
 }
-.cv__intro-container-p {
+.cv__intro-container__text {
     color: var(--primary-text-color);
     font-weight: var(--weight-normal);
     font-size: var(--font-size-big);
-    font-style: normal;
-    line-height: normal;
     padding: 0.5rem 0;
 }
 .cv__intro-container__links {
@@ -85,26 +83,22 @@ section {
     justify-content: center;
     align-items: center;
     padding: 0.5rem 0;
-    line-height: 12px;
+    line-height: 20px;
     padding-bottom: 0;
     padding-right: 2rem;
 }
-.cv__intro-container__link-p {
+.cv__intro-container__link__text {
     color: var(--primary-text-color);
     font-weight: var(--weight-normal);
     text-align: right;
     font-size: var(--font-size-big);
-    font-style: normal;
-    line-height: normal;
     padding-left: 0.2rem;
 }
 .cv__intro-container__link-a {
     color: var(--primary-text-color);
     font-size: var(--font-size-big);
     text-align: right;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: var(--weight-normal);
     text-decoration-line: underline;
     padding-left: 0.2rem;
 }
@@ -114,7 +108,7 @@ section {
     align-items: center;
     margin-left: 5rem;
 }
-.cv__intro-image {
+.cv__intro__image {
     width: 200px;
     height: 200px;
 }
@@ -139,7 +133,7 @@ section {
     flex-direction: column;
     padding: 0.5rem 0;
 }
-.cv__main-container__item-heading {
+.cv__main-container__item__heading {
     font-weight: var(--weight-bold);
     font-size: var(--font-size-large);
     padding-bottom: 0.3rem;
@@ -162,12 +156,10 @@ section {
 .cv__main-container__item__job-title {
     color: var(--section-job-title-color);
     font-size: var(--font-size-big);
-    font-style: normal;
     font-weight: var(--weight-bold);
-    line-height: normal;
     padding-right: 0.5rem;
 }
-.cv__main-container__item__job-title-company {
+.cv__main-container__item__job-title__company {
     font-size: var(--font-size-big);
     font-weight: 200;
     color: var(--secondary-text-color);
@@ -182,21 +174,20 @@ section {
     font-weight: var(--weight-normal);
     padding-bottom: 0.3rem;
 }
-.cv__main-container__item-projects-div__title {
-    color: var(--primary-text-color);
-    font-size: var(--font-size-big);
-    font-style: normal;
-    font-weight: var(--weight-bold);
-    text-decoration-line: underline;
-}
-.cv__main-container__item-projects-div-title-div {
+.cv__main-container__item__title-div {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     padding-bottom: 0.5rem;
 }
-.cv__main-container__item__formation-p {
+.cv__main-container__item__title-div__a {
+    color: var(--primary-text-color);
+    font-size: var(--font-size-big);
+    font-weight: var(--weight-bold);
+    text-decoration-line: underline;
+}
+.cv__main-container__item__formation__p {
     color: var(--secondary-text-color);
     font-size: var(--font-size-medium);
     font-weight: var(--weight-thin);
