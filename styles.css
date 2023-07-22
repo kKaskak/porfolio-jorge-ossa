@@ -28,7 +28,7 @@
     margin: 0 0.2rem;
 }
 hr {
-    color: #999999;
+    color: var(--section-job-title-color);
     width: 100%;
     margin: 0 0 1rem 0;
 }
@@ -55,7 +55,6 @@ section {
 
 .cv__intro-container-heading {
     font-weight: var(--weight-bold);
-    letter-spacing: var(--letter-spacing);
     font-size: 44px;
     font-style: normal;
     line-height: normal;
@@ -94,17 +93,15 @@ section {
     color: var(--primary-text-color);
     font-weight: var(--weight-normal);
     text-align: right;
-    font-family: IBM Plex Sans;
     font-size: var(--font-size-big);
     font-style: normal;
     line-height: normal;
     padding-left: 0.2rem;
 }
 .cv__intro-container__link-a {
-    color: var(--black, #222);
+    color: var(--primary-text-color);
     font-size: var(--font-size-big);
     text-align: right;
-    font-family: IBM Plex Sans;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -186,7 +183,7 @@ section {
     padding-bottom: 0.3rem;
 }
 .cv__main-container__item-projects-div__title {
-    color: var(--black, #222);
+    color: var(--primary-text-color);
     font-size: var(--font-size-big);
     font-style: normal;
     font-weight: var(--weight-bold);
