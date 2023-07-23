@@ -55,11 +55,11 @@ section {
     align-items: flex-start;
 }
 
-.cv__intro-container__heading {
+.cv__intro-container h1 {
     font-weight: var(--weight-bold);
     font-size: 44px;
 }
-.cv__intro-container__subheading {
+.cv__intro-container h3 {
     font-weight: var(--weight-bold);
     background: var(--gradient-text);
     font-size: var(--font-size-large);
@@ -68,7 +68,8 @@ section {
     -webkit-text-fill-color: transparent;
     padding: 0.5rem 0;
 }
-.cv__intro-container__text {
+
+.cv__intro-container p {
     color: var(--primary-text-color);
     font-weight: var(--weight-normal);
     font-size: var(--font-size-big);
@@ -87,14 +88,14 @@ section {
     padding-bottom: 0;
     padding-right: 2rem;
 }
-.cv__intro-container__link__text {
+.cv__intro-container__link p {
     color: var(--primary-text-color);
     font-weight: var(--weight-normal);
     text-align: right;
     font-size: var(--font-size-big);
     padding-left: 0.2rem;
 }
-.cv__intro-container__link-a {
+.cv__intro-container__link a {
     color: var(--primary-text-color);
     font-size: var(--font-size-big);
     text-align: right;
@@ -108,10 +109,11 @@ section {
     align-items: center;
     margin-left: 5rem;
 }
-.cv__intro__image {
+.cv__intro__image-container img {
     width: 200px;
     height: 200px;
 }
+
 /*------------- CV__MAIN  -----------------*/
 .cv__main {
     display: grid;
@@ -133,13 +135,13 @@ section {
     flex-direction: column;
     padding: 0.5rem 0;
 }
-.cv__main-container__item__heading {
+.cv__main-container__item h4 {
     font-weight: var(--weight-bold);
     font-size: var(--font-size-large);
     padding-bottom: 0.3rem;
     color: var(--section-title-color);
 }
-.cv__main-container__item__date-subheading {
+.cv__main-container__item h5 {
     font-size: var(--font-size-big);
     font-weight: var(--weight-normal);
     background: var(--gradient-text);
@@ -147,33 +149,34 @@ section {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.cv__main-container__item h6 {
+    color: var(--section-job-title-color);
+    font-size: var(--font-size-big);
+    font-weight: var(--weight-bold);
+    padding-right: 0.5rem;
+}
+.cv__main-container__item ul {
+    font-size: var(--font-size-medium);
+    font-weight: var(--weight-normal);
+    padding-bottom: 0.3rem;
+}
+.cv__main-container__item p {
+    font-size: var(--font-size-medium);
+    font-weight: var(--weight-normal);
+    padding-bottom: 0.3rem;
+}
 .cv__main-container__item__job-div {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     padding-bottom: 0.5rem;
 }
-.cv__main-container__item__job-title {
-    color: var(--section-job-title-color);
-    font-size: var(--font-size-big);
-    font-weight: var(--weight-bold);
-    padding-right: 0.5rem;
-}
-.cv__main-container__item__job-title__company {
+.cv__main-container__item__job-div p {
     font-size: var(--font-size-big);
     font-weight: 200;
     color: var(--secondary-text-color);
 }
-.cv__main-container__item__job-desc {
-    font-size: var(--font-size-medium);
-    font-weight: var(--weight-normal);
-    padding-bottom: 0.3rem;
-}
-.cv__main-container__item__p {
-    font-size: var(--font-size-medium);
-    font-weight: var(--weight-normal);
-    padding-bottom: 0.3rem;
-}
+
 .cv__main-container__item__title-div {
     display: flex;
     flex-direction: row;
@@ -181,7 +184,7 @@ section {
     align-items: center;
     padding-bottom: 0.5rem;
 }
-.cv__main-container__item__title-div__a {
+.cv__main-container__item__title-div a {
     color: var(--primary-text-color);
     font-size: var(--font-size-big);
     font-weight: var(--weight-bold);
@@ -221,7 +224,7 @@ section {
     .section__padding {
         padding: 1rem;
     }
-    .cv__intro-image {
+    .cv__intro__image-container img {
         width: 125px;
         height: 125px;
     }
