@@ -199,6 +199,7 @@ svg:hover {
     grid-template-columns: 1.5fr 1fr;
     gap: 1.5rem;
     flex-direction: row;
+    margin-bottom: 2rem;
 }
 
 .cv__main-container {
