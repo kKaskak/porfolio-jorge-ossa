@@ -301,7 +301,7 @@ svg:hover {
     .section__padding {
         padding: 1rem;
     }
-    .intro__image-container img {
+    .image-container__image {
         width: 125px;
         height: 125px;
     }
